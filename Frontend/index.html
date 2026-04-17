@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fingerprint Tracking</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .id {
+      height: auto;
+      width: 500px;
+      background: #ffffff;
+      margin: 15px;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    button {
+      padding: 8px 15px;
+      margin: 10px 5px;
+      border: none;
+      border-radius: 5px;
+      background: #007bff;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    button:disabled {
+      background: gray;
+      cursor: not-allowed;
+    }
+
+    #dataList {
+      list-style: none;
+      margin-top: 15px;
+      text-align: left;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+
+    #dataList li {
+      background: #f9f9f9;
+      padding: 10px;
+      margin-bottom: 8px;
+      border-radius: 5px;
+      border-left: 4px solid #007bff;
+      font-size: 13px;
+      word-break: break-all;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="id">
+  <h1>Guest User Tracking</h1>
+
+  <button id="trackBtn" onclick="trackClick()" disabled>Click Me</button>
+  <button onclick="loadData()">View Data</button>
+
+  <ul id="dataList"></ul>
+</div>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
