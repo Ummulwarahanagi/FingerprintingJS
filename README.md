@@ -23,16 +23,17 @@ Event data (click, page view) is sent to backend
 Backend stores data in database
 Data can be retrieved for analysis
 
-Database Schema (Suggested)
+## Database Schema (Suggested)
 
-Table: guest_events
+### Table: guest_events
 
-Field	               Type	      Description
-id	       ->         Long	 ->     Primary Key\n
-fingerprint_id	->    String	->    Unique user identifier\n
-event	          ->    String	  ->  Event type (click/page_view)
-url	            ->    String	 ->   Page URL
-timestamp	    ->      DateTime	->  Event time
+| Field          | Type      | Description                    |
+|----------------|----------|--------------------------------|
+| id             | Long     | Primary Key                    |
+| fingerprint_id | String   | Unique user identifier         |
+| event          | String   | Event type (click/page_view)   |
+| url            | String   | Page URL                       |
+| timestamp      | DateTime | Event timestamp                |
 
 Output
 Unique fingerprint ID generated
