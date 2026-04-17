@@ -28,8 +28,8 @@ Database Schema (Suggested)
 Table: guest_events
 
 Field	               Type	      Description
-id	       ->         Long	 ->     Primary Key
-fingerprint_id	->    String	->    Unique user identifier
+id	       ->         Long	 ->     Primary Key\n
+fingerprint_id	->    String	->    Unique user identifier\n
 event	          ->    String	  ->  Event type (click/page_view)
 url	            ->    String	 ->   Page URL
 timestamp	    ->      DateTime	->  Event time
