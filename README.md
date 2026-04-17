@@ -28,11 +28,11 @@ Database Schema (Suggested)
 Table: guest_events
 
 Field	               Type	      Description
-id	                Long	      Primary Key
-fingerprint_id	    String	    Unique user identifier
-event	              String	    Event type (click/page_view)
-url	                String	    Page URL
-timestamp	          DateTime	  Event time
+id	       ->         Long	 ->     Primary Key
+fingerprint_id	->    String	->    Unique user identifier
+event	          ->    String	  ->  Event type (click/page_view)
+url	            ->    String	 ->   Page URL
+timestamp	    ->      DateTime	->  Event time
 
 Output
 Unique fingerprint ID generated
